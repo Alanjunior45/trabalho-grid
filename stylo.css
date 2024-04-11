@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    height: 100vh;
+    /* Viem Heigth - Altura do View Port (tela) */
+    background-color: #edb5bd;
+    border: solid red 2px;
+    
+    padding: 3px;
+    gap: 1px;
+    
+    box-sizing: border-box;
+    /*Seja um grid conteiner */
+    display: grid;
+
+    /* Configurações do grid */
+    grid-template-columns: 0.3fr 0.7fr;
+    grid-template-rows: 0.2fr  1fr 0.2fr;
+
+    grid-template-areas:
+    "cabecalho cabecalho"
+    "aolado principal"
+    "rodape rodape"
+
+
+    
+}
+
+header {
+    background-color: #A3DFD9;
+    border: solid green 2px;
+
+    /* grid-column: 1/3; */
+    grid-area: cabecalho;
+}
+
+main {
+    background-color: #A3DFD9;
+    border: solid green 2px;
+
+    grid-area: principal;
+}
+
+aside {
+    background-color: #A3DFD9;
+    border: solid green 2px;
+
+    grid-area: aolado;
+}
+
+footer {
+    background-color: #A3DFD9;
+    border: solid green 2px;
+
+
+    grid-area: rodape;
+}
